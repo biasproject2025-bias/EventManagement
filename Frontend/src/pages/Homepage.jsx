@@ -28,7 +28,7 @@ export default function HomePage() {
         {/* Left Column */}
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
-            Designing Moments That Feel Like Magic, Your Events. Your Vision.
+            Your Events. Your Vision.
             Perfectly Managed.
           </h1>
           <p className="text-lg text-gray-600">
