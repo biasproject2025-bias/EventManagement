@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
       <header className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white/70 backdrop-blur-md">
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 ml-10">
           <img src="/logo.png" alt="Logo" className="h-10 w-10 rounded-xl shadow-md" />
           <span className="text-2xl font-semibold">EventHive</span>
         </div>
