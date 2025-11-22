@@ -13,7 +13,7 @@ export default function LoginPage() {
         alt="Background"
       />
 
-      {/* Center Login Form */} */}
+      {/* Center Login Form */} */
       <img
         src="/right-bg.png" // replace with your image
         className="absolute right-0 top-0 h-full w-1/3 object-cover animate-slide-right hidden md:block"
