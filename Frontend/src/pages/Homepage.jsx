@@ -69,7 +69,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic4.jpg"
               alt="Decor 4"
-              className="absolute w-60 h-40 bottom-16 right-8  shadow-2xl"
+              className="absolute w-60 h-40 bottom-10 right-8  shadow-2xl"
             />
 
             {/* Bottom Image */}
