@@ -44,7 +44,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic1.png"
               alt="Decor 1"
-              className="absolute w-80 h-40 top-0 left-1/4 -translate-x-1/2  shadow-2xl"
+              className="absolute w-80 h-40 top-0 right-5 -translate-x-1/2  shadow-2xl"
             />
 
             {/* Upper Left */}
