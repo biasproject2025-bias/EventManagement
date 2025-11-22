@@ -62,7 +62,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic3.webp"
               alt="Decor 3"
-              className="absolute w-60 h-40 top-60  right-10  -translate-x-1/2 shadow-2xl"
+              className="absolute w-60 h-40 top-55  right-[30px]  -translate-x-1/2 shadow-2xl"
             />
 
             {/* Lower Right */}
