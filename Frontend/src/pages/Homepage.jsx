@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
-        <div className="flex items-center space-x-4 ">
+        <div className="flex items-center space-x-4 ml-20">
           <img
             src="/logo.png"
             alt="Logo"
@@ -27,8 +27,7 @@ export default function HomePage() {
             Designing Moments That Feel Like Magic
           </h1>
           <p className="text-lg text-gray-600">
-            Add any text you want here — product description, mission, pitch, or
-            anything else. Designed cleanly with Tailwind for a modern UI.
+            Let your ideas flow — we’re here to craft them into unforgettable moments
           </p>
           <button className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition shadow-md">
             Get Started
