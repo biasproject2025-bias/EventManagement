@@ -77,6 +77,60 @@ export default function HomePage() {
           </div>
         </div>
       </main>
+
+      {/* ================== Features Section ================== */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            Why Choose EventHive?
+          </h2>
+
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-12">
+            Everything you need to plan, manage, and experience events
+            effortlessly — all in one powerful platform built for students &
+            organizers.
+          </p>
+
+          {/* Cards Container */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Card 1 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                🎟️
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">Easy Registration</h3>
+              <p className="text-gray-600">
+                Students can register for any event instantly with a smooth,
+                fast, and user-friendly experience.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                📅
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">Event Scheduling</h3>
+              <p className="text-gray-600">
+                Organizers can schedule events, set deadlines, and manage every
+                detail in a streamlined dashboard.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                ⚡
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">Real-Time Updates</h3>
+              <p className="text-gray-600">
+                Stay informed with instant announcements, status changes, and
+                updates — all in real time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
