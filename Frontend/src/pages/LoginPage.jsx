@@ -8,14 +8,14 @@ export default function LoginPage() {
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-100">
       {/* Left Animated Image */}
       <img
-        src="/left-bg.png" // replace with your image
+        src="/src/assets/login-left.jpg" // replace with your image
         className="absolute left-0 top-0 h-full w-1/3 object-cover animate-slide-left hidden md:block"
         alt="Left background"
       />
 
       {/* Right Animated Image */}
       <img
-        src="/right-bg.png" // replace with your image
+        src="/src/assets/login-right.jpg" // replace with your image
         className="absolute right-0 top-0 h-full w-1/3 object-cover animate-slide-right hidden md:block"
         alt="Right background"
       />
