@@ -72,7 +72,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic5.jpeg"
               alt="Decor 5"
-              className="absolute w-40 h-0 bottom-0 left-1/2 -translate-x-1/2  shadow-2xl"
+              className="absolute w-40 h-30 bottom-0 left-1/2 -translate-x-1/2  shadow-2xl"
             />
           </div>
         </div>
