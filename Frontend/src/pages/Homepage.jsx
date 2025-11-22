@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ml-10">
           <img
             src="/logo.png"
             alt="Logo"
