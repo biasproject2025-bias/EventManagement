@@ -254,58 +254,61 @@ export default function HomePage() {
       </section>
 
       {/* ================== Footer Section ================== */}
-      <section className="py-16 bg-indigo-50">
+      {/* Support Section */}
+      <section className="py-12 bg-indigo-100 mt-10">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Need Help or Support?
-          </h2>
-
-          <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
-            We're here to help you with anything — event issues, account
-            questions, or general assistance. Reach out anytime!
+          <h2 className="text-3xl font-bold text-gray-800 mb-3">Need Help?</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Whether you have questions about event management, account issues,
+            or feature requests— our team is always here to support you.
           </p>
 
-          {/* Support Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Card 1 – Email Support */}
-            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Email Support
-              </h3>
-              <p className="text-gray-600 mb-3">
-                Contact our team for detailed assistance.
-              </p>
-              <p className="font-medium text-indigo-600">
-                support@eventhive.com
-              </p>
-            </div>
-
-            {/* Card 2 – FAQs */}
-            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">FAQs</h3>
-              <p className="text-gray-600 mb-3">
-                Find answers to the most commonly asked questions.
-              </p>
-              <button className="text-indigo-600 font-medium hover:underline">
-                View FAQs
-              </button>
-            </div>
-
-            {/* Card 3 – Live Support */}
-            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Live Assistance
-              </h3>
-              <p className="text-gray-600 mb-3">
-                Get real-time help from our support team.
-              </p>
-              <button className="text-indigo-600 font-medium hover:underline">
-                Start Chat
-              </button>
-            </div>
+          <div className="mt-6 space-y-2">
+            <p className="text-gray-700">
+              <strong>Email:</strong> support@eventhive.com
+            </p>
+            <p className="text-gray-700">
+              <strong>Help Center:</strong> Visit our FAQ page for quick
+              answers.
+            </p>
+            <p className="text-gray-700">
+              <strong>Live Support:</strong> Chat coming soon!
+            </p>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-8 mt-10">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Top Row */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <h3 className="text-xl font-semibold text-white">EventHive</h3>
+
+            <div className="flex space-x-6 text-gray-400">
+              <a href="#" className="hover:text-white">
+                About
+              </a>
+              <a href="#" className="hover:text-white">
+                Features
+              </a>
+              <a href="#" className="hover:text-white">
+                Support
+              </a>
+              <a href="#" className="hover:text-white">
+                Contact
+              </a>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
+            © {new Date().getFullYear()} EventHive — All rights reserved.
+            <br />
+            Crafted with care to simplify event management.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
