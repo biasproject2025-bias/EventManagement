@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
-        <div className="flex items-center space-x-4 ml-10">
+        <div className="flex items-center space-x-4 ">
           <img
             src="/logo.png"
             alt="Logo"
@@ -24,7 +24,7 @@ export default function HomePage() {
         {/* Left Column */}
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
-            A Beautiful UI Built With Tailwind CSS
+            Designing Moments That Feel Like Magic
           </h1>
           <p className="text-lg text-gray-600">
             Add any text you want here — product description, mission, pitch, or
