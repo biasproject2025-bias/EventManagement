@@ -14,7 +14,7 @@ export default function HomePage() {
           <span className="text-3xl font-semibold">EventHive</span>
         </div>
 
-        <button className="px-6 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
+        <button className="px-6 py-2 mr-20 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
           Login
         </button>
       </header>
@@ -27,7 +27,8 @@ export default function HomePage() {
             Designing Moments That Feel Like Magic
           </h1>
           <p className="text-lg text-gray-600">
-            Let your ideas flow — we’re here to craft them into unforgettable moments
+            From celebrations to competitions, we make event planning simple.
+            Focus on the excitement while we handle the management.
           </p>
           <button className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition shadow-md">
             Get Started
