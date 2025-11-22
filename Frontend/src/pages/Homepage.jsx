@@ -38,7 +38,7 @@ export default function HomePage() {
 
         {/* Right Column – S-shaped collage */}
         {/* Right Column – S-shaped collage */}
-        <div className="md:w-1/2 relative h-[600px] flex items-center justify-center mt-6 md:mt-0">
+        <div className="md:w-1/2 relative h-[600px] flex items-center justify-center  md:mt-0">
           <div className="relative w-full h-full">
             {/* Top Image */}
             <img
