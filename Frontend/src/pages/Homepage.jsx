@@ -95,37 +95,81 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Card 1 */}
             <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
-              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
                 🎟️
               </div>
-              <h3 className="text-2xl font-semibold mb-2">Easy Registration</h3>
+              <h3 className="text-2xl font-semibold mb-2">
+                Smart Registration
+              </h3>
               <p className="text-gray-600">
-                Students can register for any event instantly with a smooth,
-                fast, and user-friendly experience.
+                One-click event registration with instant confirmation — smooth,
+                fast, and hassle-free for students.
               </p>
             </div>
 
             {/* Card 2 */}
             <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
-              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
                 📅
               </div>
-              <h3 className="text-2xl font-semibold mb-2">Event Scheduling</h3>
+              <h3 className="text-2xl font-semibold mb-2">Event Tracking</h3>
               <p className="text-gray-600">
-                Organizers can schedule events, set deadlines, and manage every
-                detail in a streamlined dashboard.
+                Stay updated with live schedules, deadlines, and reminders for
+                every event you plan to attend.
               </p>
             </div>
 
             {/* Card 3 */}
             <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
-              <div className="h-16 w-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
-                ⚡
+              <div className="h-16 w-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                🧑‍🤝‍🧑
               </div>
-              <h3 className="text-2xl font-semibold mb-2">Real-Time Updates</h3>
+              <h3 className="text-2xl font-semibold mb-2">
+                Team Collaboration
+              </h3>
               <p className="text-gray-600">
-                Stay informed with instant announcements, status changes, and
-                updates — all in real time.
+                Easily assign roles, manage volunteers, and coordinate tasks
+                with your event team.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-pink-100 text-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                📝
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">
+                Form & Submission Manager
+              </h3>
+              <p className="text-gray-600">
+                Manage registrations, submissions, entries, and responses
+                without messy spreadsheets.
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                🔔
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">Instant Alerts</h3>
+              <p className="text-gray-600">
+                Get notified immediately about schedule changes, event results,
+                announcements, and updates.
+              </p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition transform hover:-translate-y-2">
+              <div className="h-16 w-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                📊
+              </div>
+              <h3 className="text-2xl font-semibold mb-2">
+                Analytics Dashboard
+              </h3>
+              <p className="text-gray-600">
+                View insights like participant count, event engagement, and
+                performance analytics in one place.
               </p>
             </div>
           </div>
