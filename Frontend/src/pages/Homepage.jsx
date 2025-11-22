@@ -56,7 +56,7 @@ export default function HomePage() {
 
             {/* Middle */}
             <img
-              src="/img3.png"
+              src="/src/assets/homepage-pic3.webp"
               alt="Decor 3"
               className="absolute w-60 h-40 top-64 left-1/2 -translate-x-1/2 shadow-2xl"
             />
