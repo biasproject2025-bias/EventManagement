@@ -187,7 +187,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="flex flex-col justify-center space-y-6">
               <div>
@@ -252,6 +252,102 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ================== Footer Section ================== */}
+      <footer className="bg-gray-900 text-gray-300 py-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            {/* Brand */}
+            <div>
+              <h3 className="text-2xl font-semibold text-white">EventHive</h3>
+              <p className="text-gray-400 mt-3">
+                Streamlining event management so you can focus on what truly
+                matters — creating unforgettable moments.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+              <ul className="mt-4 space-y-2">
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Support */}
+            <div>
+              <h4 className="text-lg font-semibold text-white">Support</h4>
+              <ul className="mt-4 space-y-2">
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-indigo-400">
+                    Report Issue
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="text-lg font-semibold text-white">Contact</h4>
+              <ul className="mt-4 space-y-3 text-gray-400">
+                <li className="flex items-center space-x-3">
+                  <span className="text-xl">📩</span>
+                  <span>eventhive.support@gmail.com</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <span className="text-xl">📞</span>
+                  <span>+91 98765 43210</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <span className="text-xl">📍</span>
+                  <span>123 Event Street, India</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Line */}
+          <div className="border-t border-gray-700 mt-12 pt-6 text-center">
+            <p className="text-gray-500">
+              © {new Date().getFullYear()} EventHive. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
