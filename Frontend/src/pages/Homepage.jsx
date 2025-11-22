@@ -4,12 +4,17 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
-      <header className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white/70 backdrop-blur-md">
-        <div className="flex items-center space-x-3 ml-10">
-          <img src="/logo.png" alt="Logo" className="h-10 w-10 rounded-xl shadow-md" />
-          <span className="text-2xl font-semibold">EventHive</span>
+      <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
+        <div className="flex items-center space-x-4">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="h-12 w-12 rounded-xl shadow-md"
+          />
+          <span className="text-3xl font-semibold">EventHive</span>
         </div>
-        <button className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
+
+        <button className="px-6 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
           Login
         </button>
       </header>
@@ -22,8 +27,8 @@ export default function HomePage() {
             A Beautiful UI Built With Tailwind CSS
           </h1>
           <p className="text-lg text-gray-600">
-            Add any text you want here — product description, mission, pitch, or anything else.
-            Designed cleanly with Tailwind for a modern UI.
+            Add any text you want here — product description, mission, pitch, or
+            anything else. Designed cleanly with Tailwind for a modern UI.
           </p>
           <button className="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition shadow-md">
             Get Started
