@@ -44,14 +44,14 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic1.png"
               alt="Decor 1"
-              className="absolute w-44 top-0 left-1/2 -translate-x-1/2 rounded-3xl shadow-2xl"
+              className="absolute w-70 h-30 top-0 left-1/2 -translate-x-1/2  shadow-2xl"
             />
 
             {/* Upper Left */}
             <img
               src="/src/assets/homepage-pic2.webp"
               alt="Decor 2"
-              className="absolute w-48 top-36 left-1/4 rounded-3xl shadow-2xl"
+              className="absolute w-50 h-40 top-36 left-1/4  shadow-2xl"
             />
 
             {/* Middle */}
