@@ -55,7 +55,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic2.webp"
               alt="Decor 2"
-              className="absolute w-70 h-40 top-30 left-3  shadow-2xl"
+              className="absolute w-70 h-40 top-40 left-3  shadow-2xl"
             />
 
             {/* Middle */}
@@ -69,7 +69,7 @@ export default function HomePage() {
             <img
               src="/src/assets/homepage-pic4.jpg"
               alt="Decor 4"
-              className="absolute w-60 h-40 top-[350px] right-8  shadow-2xl"
+              className="absolute w-60 h-40 top-[400px] right-8  shadow-2xl"
             />
 
             {/* Bottom Image */}
