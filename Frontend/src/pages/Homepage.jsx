@@ -58,14 +58,14 @@ export default function HomePage() {
             <img
               src="/img3.png"
               alt="Decor 3"
-              className="absolute w-40 top-64 left-1/2 -translate-x-1/2 rounded-3xl shadow-2xl"
+              className="absolute w-60 h-40 top-64 left-1/2 -translate-x-1/2 shadow-2xl"
             />
 
             {/* Lower Right */}
             <img
               src="/img4.png"
               alt="Decor 4"
-              className="absolute w-48 top-[350px] right-1/4 rounded-3xl shadow-2xl"
+              className="absolute w-50 h-40 top-[350px] right-1/4  shadow-2xl"
             />
 
             {/* Bottom Image */}
