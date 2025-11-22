@@ -7,7 +7,7 @@ export default function HomePage() {
       <header className="w-full flex items-center justify-between px-6 py-4 shadow-sm bg-white/70 backdrop-blur-md">
         <div className="flex items-center space-x-3">
           <img src="/logo.png" alt="Logo" className="h-10 w-10 rounded-xl shadow-md" />
-          <span className="text-2xl font-semibold">Website Name</span>
+          <span className="text-2xl font-semibold">EventHive</span>
         </div>
         <button className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
           Login
