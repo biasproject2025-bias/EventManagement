@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import "../styles/LoginPage.css"; // optional if you want custom animations
+
 
 export default function LoginPage() {
   const [activeTab, setActiveTab] = useState("student");
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gray-100">
-      {/* Left Animated Image */}
+      {/* Background Image */}
       <img
-        src="/src/assets/login-left.jpg" // replace with your image
-        className="absolute left-0 top-0 h-full w-1/2 object-cover animate-slide-left hidden md:block"
-        alt="Left background"
+        src="/src/assets/loginBg.jpg" // replace with your image
+        className="absolute inset-0 w-full h-full object-cover opacity-60 blur-sm"
+        alt="Background"
       />
 
-      {/* Right Animated Image */}
+      {/* Center Login Form */} */}
       <img
-        src="/src/assets/login-right.jpg" // replace with your image
-        className="absolute right-0 top-0 h-full w-1/2 object-cover animate-slide-right hidden md:block"
+        src="/right-bg.png" // replace with your image
+        className="absolute right-0 top-0 h-full w-1/3 object-cover animate-slide-right hidden md:block"
         alt="Right background"
       />
 
