@@ -254,100 +254,58 @@ export default function HomePage() {
       </section>
 
       {/* ================== Footer Section ================== */}
-      <footer className="bg-gray-900 text-gray-300 py-12">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            {/* Brand */}
-            <div>
-              <h3 className="text-2xl font-semibold text-white">EventHive</h3>
-              <p className="text-gray-400 mt-3">
-                Streamlining event management so you can focus on what truly
-                matters — creating unforgettable moments.
+      <section className="py-16 bg-indigo-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Need Help or Support?
+          </h2>
+
+          <p className="text-gray-600 mb-10 max-w-2xl mx-auto">
+            We're here to help you with anything — event issues, account
+            questions, or general assistance. Reach out anytime!
+          </p>
+
+          {/* Support Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1 – Email Support */}
+            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Email Support
+              </h3>
+              <p className="text-gray-600 mb-3">
+                Contact our team for detailed assistance.
+              </p>
+              <p className="font-medium text-indigo-600">
+                support@eventhive.com
               </p>
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h4 className="text-lg font-semibold text-white">Quick Links</h4>
-              <ul className="mt-4 space-y-2">
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Contact
-                  </a>
-                </li>
-              </ul>
+            {/* Card 2 – FAQs */}
+            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">FAQs</h3>
+              <p className="text-gray-600 mb-3">
+                Find answers to the most commonly asked questions.
+              </p>
+              <button className="text-indigo-600 font-medium hover:underline">
+                View FAQs
+              </button>
             </div>
 
-            {/* Support */}
-            <div>
-              <h4 className="text-lg font-semibold text-white">Support</h4>
-              <ul className="mt-4 space-y-2">
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-indigo-400">
-                    Report Issue
-                  </a>
-                </li>
-              </ul>
+            {/* Card 3 – Live Support */}
+            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Live Assistance
+              </h3>
+              <p className="text-gray-600 mb-3">
+                Get real-time help from our support team.
+              </p>
+              <button className="text-indigo-600 font-medium hover:underline">
+                Start Chat
+              </button>
             </div>
-
-            {/* Contact Info */}
-            <div>
-              <h4 className="text-lg font-semibold text-white">Contact</h4>
-              <ul className="mt-4 space-y-3 text-gray-400">
-                <li className="flex items-center space-x-3">
-                  <span className="text-xl">📩</span>
-                  <span>eventhive.support@gmail.com</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <span className="text-xl">📞</span>
-                  <span>+91 98765 43210</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <span className="text-xl">📍</span>
-                  <span>123 Event Street, India</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bottom Line */}
-          <div className="border-t border-gray-700 mt-12 pt-6 text-center">
-            <p className="text-gray-500">
-              © {new Date().getFullYear()} EventHive. All rights reserved.
-            </p>
           </div>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
