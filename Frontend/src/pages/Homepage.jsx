@@ -187,7 +187,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             {/* Contact Information */}
             <div className="flex flex-col justify-center space-y-6">
               <div>
