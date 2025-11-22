@@ -67,9 +67,9 @@ export default function HomePage() {
 
             {/* Lower Right */}
             <img
-              src="/img4.png"
+              src="/src/assets/homepage-pic4.jpg"
               alt="Decor 4"
-              className="absolute w-50 h-40 top-[350px] right-1/4  shadow-2xl"
+              className="absolute w-60 h-40 top-[350px] right-10  shadow-2xl"
             />
 
             {/* Bottom Image */}

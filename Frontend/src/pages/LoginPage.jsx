@@ -9,14 +9,14 @@ export default function LoginPage() {
       {/* Left Animated Image */}
       <img
         src="/src/assets/login-left.jpg" // replace with your image
-        className="absolute left-0 top-0 h-full w-1/3 object-cover animate-slide-left hidden md:block"
+        className="absolute left-0 top-0 h-full w-full object-cover animate-slide-left hidden md:block"
         alt="Left background"
       />
 
       {/* Right Animated Image */}
       <img
         src="/src/assets/login-right.jpg" // replace with your image
-        className="absolute right-0 top-0 h-full w-1/3 object-cover animate-slide-right hidden md:block"
+        className="absolute right-0 top-0 h-full w-full object-cover animate-slide-right hidden md:block"
         alt="Right background"
       />
 
