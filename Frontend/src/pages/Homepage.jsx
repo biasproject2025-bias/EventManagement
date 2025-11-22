@@ -38,20 +38,20 @@ export default function HomePage() {
 
         {/* Right Column – S-shaped collage */}
         {/* Right Column – S-shaped collage */}
-        <div className="md:w-1/2 relative h-[600px] flex items-center justify-center mt-10 md:mt-0">
+        <div className="md:w-1/2 relative h-[600px] flex items-center justify-center mt-6 md:mt-0">
           <div className="relative w-full h-full">
             {/* Top Image */}
             <img
               src="/src/assets/homepage-pic1.png"
               alt="Decor 1"
-              className="absolute w-70 h-50 top-0 left-1/2 -translate-x-1/2  shadow-2xl"
+              className="absolute w-80 h-40 top-0 left-1/2 -translate-x-1/2  shadow-2xl"
             />
 
             {/* Upper Left */}
             <img
               src="/src/assets/homepage-pic2.webp"
               alt="Decor 2"
-              className="absolute w-60 h-40 top-50 left-5  shadow-2xl"
+              className="absolute w-60 h-40 top-60 left-5  shadow-2xl"
             />
 
             {/* Middle */}
