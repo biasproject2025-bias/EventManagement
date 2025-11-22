@@ -24,7 +24,7 @@ export default function HomePage() {
         {/* Left Column */}
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
-            Designing Moments That Feel Like Magic
+            Designing Moments That Feel Like Magic, Your Events. Your Vision. Perfectly Managed.
           </h1>
           <p className="text-lg text-gray-600">
             From celebrations to competitions, we make event planning simple.
@@ -39,12 +39,12 @@ export default function HomePage() {
         <div className="md:w-1/2 relative h-[500px] flex items-center justify-center mt-10 md:mt-0">
           <div className="relative w-full h-full">
             <img
-              src="/img1.png"
+              src="/src/assets/homepage-pic1.png"
               alt="Decor 1"
               className="absolute w-32 top-0 left-1/2 -translate-x-1/2 rounded-3xl shadow-2xl"
             />
             <img
-              src="/img2.png"
+              src="/src/assets/homepage-pic2.webp"
               alt="Decor 2"
               className="absolute w-36 top-28 left-1/4 rounded-3xl shadow-2xl"
             />
