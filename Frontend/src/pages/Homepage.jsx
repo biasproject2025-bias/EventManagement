@@ -7,7 +7,7 @@ export default function HomePage() {
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
         <div className="flex items-center space-x-4 ml-20">
           <img
-            src="/src/assets/EventHive-logo.jpg"
+            src="/src/assets/EventHive-logo.png"
             alt="Logo"
             className="h-12 w-12 rounded-xl shadow-md"
           />
