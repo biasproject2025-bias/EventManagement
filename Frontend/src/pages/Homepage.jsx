@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -14,9 +15,12 @@ export default function HomePage() {
           <span className="text-3xl font-semibold">EventHive</span>
         </div>
 
-        <button className="px-6 py-2 mr-20 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md">
+        <NavLink
+          to="/login"
+          className="px-6 py-2 mr-20 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md"
+        >
           Login
-        </button>
+        </NavLink>
       </header>
 
       {/* Main Content */}
