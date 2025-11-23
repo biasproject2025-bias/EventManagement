@@ -26,7 +26,7 @@ export default function HomePage() {
 
           <NavLink
             to="/register"
-            className="px-6 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 transition shadow-md"
+            className="px-5 py-1 rounded-xl bg-green-600 text-white hover:bg-green-700 transition shadow-md"
           >
             Register
           </NavLink>
@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
 
         {/* Right Column – S-shaped collage */}
-        {/* Right Column – S-shaped collage */}
+        
         <div className="md:w-1/2 relative h-[600px] flex items-center justify-center  md:mt-0">
           <div className="relative w-full h-full">
             {/* Top Image */}
