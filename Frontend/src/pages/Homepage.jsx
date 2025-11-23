@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
+    <div id="about" className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
       
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
@@ -92,7 +92,7 @@ export default function HomePage() {
       </main>
 
       {/* ================== Features Section ================== */}
-      <section className="py-20 bg-white">
+      <section id="features" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Why Choose EventHive?
@@ -190,7 +190,7 @@ export default function HomePage() {
       </section>
 
       {/* ================== Contact Section ================== */}
-      <section className="py-20 bg-indigo-50">
+      <section id="contact" className="py-20 bg-indigo-50">
         <div className="max-w-6xl mx-auto px-6 md:px-12">
           {/* Heading */}
           <div className="text-center mb-12">
@@ -268,7 +268,7 @@ export default function HomePage() {
 
       {/* ================== Footer Section ================== */}
       {/* Support Section */}
-      <section className="py-12 bg-indigo-100 mt-10">
+      <section id="support" className="py-12 bg-indigo-100 mt-10">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-3">Need Help?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -299,16 +299,16 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-white">EventHive</h3>
 
             <div className="flex space-x-6 text-gray-400">
-              <a href="#features" className="hover:text-white">
+              <a href="#about" className="hover:text-white">
                 About
               </a>
-              <a href="#" className="hover:text-white">
+              <a href="#features" className="hover:text-white">
                 Features
               </a>
-              <a href="#" className="hover:text-white">
+              <a href="#support" className="hover:text-white">
                 Support
               </a>
-              <a href="#" className="hover:text-white">
+              <a href="#contact" className="hover:text-white">
                 Contact
               </a>
             </div>
