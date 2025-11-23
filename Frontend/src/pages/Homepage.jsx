@@ -5,6 +5,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 flex flex-col text-gray-900">
       {/* Header */}
+      
       <header className="w-full flex items-center justify-between px-12 py-5 shadow-sm bg-white/70 backdrop-blur-md">
         <div className="flex items-center space-x-4 ml-20">
           <img
@@ -15,12 +16,21 @@ export default function HomePage() {
           <span className="text-3xl font-semibold">EventHive</span>
         </div>
 
-        <NavLink
-          to="/login"
-          className="px-6 py-2 mr-20 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md"
-        >
-          Login
-        </NavLink>
+        <div className="flex items-center space-x-4 mr-20">
+          <NavLink
+            to="/login"
+            className="px-6 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-md"
+          >
+            Login
+          </NavLink>
+
+          <NavLink
+            to="/register"
+            className="px-6 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 transition shadow-md"
+          >
+            Register
+          </NavLink>
+        </div>
       </header>
 
       {/* Main Content */}
@@ -28,8 +38,7 @@ export default function HomePage() {
         {/* Left Column */}
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
-            Your Events. Your Vision.
-            Perfectly Managed.
+            Your Events. Your Vision. Perfectly Managed.
           </h1>
           <p className="text-lg text-gray-600">
             From celebrations to competitions, we make event planning simple.
