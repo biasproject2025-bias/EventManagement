@@ -26,7 +26,7 @@ export default function HomePage() {
 
           <NavLink
             to="/register"
-            className="px-5 py-1 rounded-xl bg-green-600 text-white hover:bg-green-700 transition shadow-md"
+            className="px-6 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700 transition shadow-md"
           >
             Register
           </NavLink>
