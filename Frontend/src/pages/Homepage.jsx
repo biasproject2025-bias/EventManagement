@@ -299,7 +299,7 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold text-white">EventHive</h3>
 
             <div className="flex space-x-6 text-gray-400">
-              <a href="#" className="hover:text-white">
+              <a href="#features" className="hover:text-white">
                 About
               </a>
               <a href="#" className="hover:text-white">
