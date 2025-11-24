@@ -1,5 +1,3 @@
-// src/components/Navbar.jsx
-
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -7,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white/70 backdrop-blur-md shadow-md fixed top-0 z-50">
+    <nav className="w-full bg-white/70 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-16">
         {/* Logo + Brand */}
         <div className="flex items-center space-x-4">
@@ -51,17 +49,6 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <div className={`${isOpen ? "block" : "hidden"} md:flex md:items-center md:space-x-6`}>
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `px-3 py-2 rounded-md text-gray-800 hover:bg-indigo-100 ${
-                isActive ? "font-bold" : ""
-              }`
-            }
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </NavLink>
           <NavLink
             to="/login"
             className={({ isActive }) =>
