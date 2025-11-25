@@ -5,7 +5,6 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen w-full bg-blue-50 flex">
-      {/* LEFT SIDE — LOGIN FORM */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-10">
         <div className="bg-white w-full max-w-md p-10 rounded-2xl shadow-xl">
           {/* Tabs */}
@@ -66,7 +65,7 @@ export default function LoginPage() {
       {/* RIGHT SIDE — BACKGROUND IMAGE */}
       <div className="hidden md:block w-1/2">
         <img
-          src="/src/assets/login-bg.jpg"  // Replace with your actual image
+          src="/src/assets/login-bg.jpg" // Replace with your actual image
           className="w-full h-full object-cover"
           alt="Login background"
         />
