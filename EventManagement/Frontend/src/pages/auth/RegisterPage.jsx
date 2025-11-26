@@ -1,13 +1,27 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function RegisterPage() {
   const [activeTab, setActiveTab] = useState("student");
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+
+    if (activeTab === "student") {
+      navigate("/student"); // ⬅ Redirect to StudentPage
+    } else {
+      navigate("/admin"); // ⬅ Can change later for Admin Dashboard
+    }
+  };
 
   return (
     <div className="min-h-screen w-full flex bg-blue-50">
+
       {/* Left Side – Register Form */}
       <div className="w-full md:w-1/2 flex items-center justify-center p-10">
         <div className="bg-white shadow-2xl rounded-2xl p-10 w-[90%] sm:w-[450px]">
+
           {/* Tabs */}
           <div className="flex justify-between mb-8 border-b pb-2">
             <button
@@ -34,7 +48,7 @@ export default function RegisterPage() {
           </div>
 
           {/* Register Form */}
-          <form className="space-y-5">
+          <form className="space-y-5" onSubmit={handleRegister}>
             <div>
               <label className="text-gray-700 font-medium">Name</label>
               <input
@@ -72,7 +86,7 @@ export default function RegisterPage() {
         </div>
       </div>
 
-      {/* Right Side – Background Image */}
+      {/* Right Side - Background Image */}
       <div className="hidden md:block w-1/2 relative">
         <img
           src="/src/assets/register-bg.jpg"
