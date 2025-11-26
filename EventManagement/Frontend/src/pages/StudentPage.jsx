@@ -37,6 +37,7 @@ export default function StudentPage() {
         "/aboutSlide-4.jpg",
         "/aboutSlide-5.jpg",
         "/aboutSlide-6.jpg",
+        "/aboutSlide-7.jpg"
     ];
 
     const [currentImage, setCurrentImage] = React.useState(0);
