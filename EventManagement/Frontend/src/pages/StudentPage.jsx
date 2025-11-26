@@ -8,7 +8,7 @@ export default function StudentPage() {
       <div 
         className="relative w-full h-[70vh] bg-center bg-cover group"
         style={{
-          backgroundImage: "url('https://your-college-image-url.com/image.jpg')"
+          backgroundImage: "url('/heroBg.webp')"
         }}
       >
         {/* Overlay */}
