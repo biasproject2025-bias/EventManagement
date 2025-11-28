@@ -1,17 +1,40 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../../api"; // ✅ IMPORTANT
 
 export default function LoginPage() {
   const [activeTab, setActiveTab] = useState("student");
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await api.post("/auth/login", {
+        email,
+        password,
+      });
+
+      alert("Login Success!");
+      console.log(res.data);
+
+      navigate("/StudentPage"); // ✅ redirect after login
+    } catch (err) {
+      console.error("LOGIN ERROR:", err);
+      alert(err.response?.data?.error || "Login Failed");
+    }
+  };
 
   return (
     <div className="min-h-screen w-full bg-blue-50 flex">
       <div className="w-full md:w-1/2 flex items-center justify-center p-10">
         <div className="bg-white w-full max-w-md p-10 rounded-2xl shadow-xl">
-          {/* Tabs */}
           <div className="flex justify-between mb-8 border-b pb-2">
             <button
               onClick={() => setActiveTab("student")}
-              className={`text-lg font-semibold pb-1 transition ${
+              className={`text-lg font-semibold pb-1 ${
                 activeTab === "student"
                   ? "text-indigo-600 border-b-2 border-indigo-600"
                   : "text-gray-500"
@@ -22,7 +45,7 @@ export default function LoginPage() {
 
             <button
               onClick={() => setActiveTab("admin")}
-              className={`text-lg font-semibold pb-1 transition ${
+              className={`text-lg font-semibold pb-1 ${
                 activeTab === "admin"
                   ? "text-indigo-600 border-b-2 border-indigo-600"
                   : "text-gray-500"
@@ -32,43 +55,35 @@ export default function LoginPage() {
             </button>
           </div>
 
-          {/* Login Form */}
-          <form className="space-y-5">
+          <form onSubmit={handleLogin} className="space-y-5">
             <div>
-              <label className="text-gray-700 font-medium">Email</label>
+              <label>Email</label>
               <input
                 type="email"
-                className="w-full mt-1 p-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-3 border rounded-xl"
               />
             </div>
 
             <div>
-              <label className="text-gray-700 font-medium">Password</label>
+              <label>Password</label>
               <input
                 type="password"
-                className="w-full mt-1 p-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full p-3 border rounded-xl"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-3 rounded-xl font-semibold hover:bg-indigo-700 transition"
+              className="w-full bg-indigo-600 text-white py-3 rounded-xl"
             >
               Login
             </button>
           </form>
         </div>
-      </div>
-
-      {/* RIGHT SIDE — BACKGROUND IMAGE */}
-      <div className="hidden md:block w-1/2">
-        <img
-          src="/src/assets/login-bg.jpg" // Replace with your actual image
-          className="w-full h-full object-cover"
-          alt="Login background"
-        />
       </div>
     </div>
   );
