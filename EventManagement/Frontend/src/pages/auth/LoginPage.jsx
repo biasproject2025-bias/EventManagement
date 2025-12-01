@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../../api"; // ✅ IMPORTANT
+import api from "../../app/api";
 
 export default function LoginPage() {
-  const [activeTab, setActiveTab] = useState("student");
+  const [activeTab, setActiveTab] = useState("student"); // ✅ student / admin
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,15 +12,27 @@ export default function LoginPage() {
     e.preventDefault();
 
     try {
-      const res = await api.post("/auth/login", {
+      // ✅ STUDENT vs ADMIN API
+      const endpoint = activeTab === "admin" ? "/admin/login" : "/auth/login";
+
+      const res = await api.post(endpoint, {
         email,
         password,
       });
 
-      alert("Login Success!");
+      alert(`${activeTab.toUpperCase()} Login Success ✅`);
       console.log(res.data);
 
-      navigate("/StudentPage"); // ✅ redirect after login
+      // ✅ TOKEN STORE
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("role", activeTab);
+
+      // ✅ ROLE BASED REDIRECT
+      if (activeTab === "admin") {
+        navigate("/admin");
+      } else {
+        navigate("/student");
+      }
     } catch (err) {
       console.error("LOGIN ERROR:", err);
       alert(err.response?.data?.error || "Login Failed");
@@ -31,8 +43,10 @@ export default function LoginPage() {
     <div className="min-h-screen w-full bg-blue-50 flex">
       <div className="w-full md:w-1/2 flex items-center justify-center p-10">
         <div className="bg-white w-full max-w-md p-10 rounded-2xl shadow-xl">
+          {/* ✅ TAB SWITCH */}
           <div className="flex justify-between mb-8 border-b pb-2">
             <button
+              type="button"
               onClick={() => setActiveTab("student")}
               className={`text-lg font-semibold pb-1 ${
                 activeTab === "student"
@@ -44,6 +58,7 @@ export default function LoginPage() {
             </button>
 
             <button
+              type="button"
               onClick={() => setActiveTab("admin")}
               className={`text-lg font-semibold pb-1 ${
                 activeTab === "admin"
@@ -55,6 +70,7 @@ export default function LoginPage() {
             </button>
           </div>
 
+          {/* ✅ LOGIN FORM */}
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label>Email</label>
@@ -63,6 +79,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full p-3 border rounded-xl"
+                required
               />
             </div>
 
@@ -73,6 +90,7 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full p-3 border rounded-xl"
+                required
               />
             </div>
 
@@ -80,7 +98,7 @@ export default function LoginPage() {
               type="submit"
               className="w-full bg-indigo-600 text-white py-3 rounded-xl"
             >
-              Login
+              Login as {activeTab}
             </button>
           </form>
         </div>
